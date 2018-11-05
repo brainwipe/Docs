@@ -29,7 +29,7 @@ and filters architectural style: the filters are where processing
 occurs, they do not share state with other filters, nor do they know
 about adjacent filters. The pipe is the connector between the filters in
 our case this is provided by the **IHandleRequests<TRequest>** interface
-which has a method **IHandleRequests&ltTRequest> Successor** that allows
+which has a method **IHandleRequests<TRequest> Successor** that allows
 us to chain filters together.
 
 |PipesAndFilters|
